@@ -9,10 +9,11 @@ makeDancer.prototype.constructor = makeDancer;
 makeDancer.prototype.step = function() {
   // the basic dancer doesn't do anything interesting at all on each step,
   // it just schedules the next step
+
   var blinkyDancerInstance = this;
   setTimeout(function() {
     blinkyDancerInstance.step();
-  }, blinkyDancerInstance.timeBetweenSteps);
+  }, blinkyDancerInstance.timeBetweenSteps, blinkyDancerInstance);
 };
 
 
@@ -26,3 +27,6 @@ makeDancer.prototype.setPosition = function(top, left) {
   };
   this.$node.css(styleSettings);
 };
+
+// On this page: we define setPosition
+// var setPosition = function () { };
