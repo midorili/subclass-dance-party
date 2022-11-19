@@ -28,5 +28,22 @@ makeDancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 };
 
+makeDancer.prototype.lineUp = function (top, left, isLinedUp) {
+  // If lineup is being called on a bouncy dancer
+
+  // AND if the isLinedUp flag is false
+
+  // Set the top value to
+
+  var styleSettings = {
+    top: '50%',
+    left: left
+  };
+  this.$node.css(styleSettings);
+
+  this.isLinedUp = true;
+};
+
+
 // On this page: we define setPosition
 // var setPosition = function () { };

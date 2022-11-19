@@ -10,6 +10,7 @@ var makeBouncyDancer = function(top, left, timeBetweenSteps) {
   this.up = true;
   this.step();
   this.setPosition(top, left);
+  this.isLinedUp = false;
 };
 makeBouncyDancer.prototype = Object.create(makeDancer.prototype);
 makeBouncyDancer.prototype.constructor = makeBouncyDancer;
@@ -20,16 +21,20 @@ makeBouncyDancer.prototype.step = function() {
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
   this.oldStep();
+  if (this.isLinedUp === false) {
+    if (this.up) {
+      this.top += 15;
+      // need to set up value to false
+      this.up = false;
+      this.setPosition(this.top, this.left);
+    } else if (!this.up) {
+      this.top -= 15;
+      this.up = true;
+      this.setPosition(this.top, this.left);
 
-  // if statement to find out if it is up or down
-  if (this.up) {
-    this.top += 15;
-    // need to set up value to false
-    this.up = false;
-  } else if (!this.up) {
-    this.top -= 15;
-    this.up = true;
-    // need to set up value back to true
+      // need to set up value back to true
+    }
   }
-  this.setPosition(this.top, this.left);
+  // if statement to find out if it is up or down
+
 };
