@@ -28,6 +28,15 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
+
+    $('.dancer').on('mouseover', function (event) {
+      $(event.target).css('height', '150px');
+    });
+
+    $('.dancer').on('mouseleave', function (event) {
+      $(event.target).css('height', '100px');
+    });
+
   });
 
   $('.lineUpButton').on('click', function() {

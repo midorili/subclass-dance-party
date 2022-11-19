@@ -2,9 +2,9 @@ var spinnyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this);
   this.top = top;
   this.left = left;
-  this.$node = $('<img src ="dancer3.jpg" class="dancer spinnydancer" alt="dancer3">');
+  this.$node = $('<img src ="dancer1.jpg" class="dancer spinnydancer" alt="dancer3">');
   this.timeBetweenSteps = 50;
-  this.rotation = 3;
+  this.rotation = 0;
   this.step();
   this.setPosition(top, left);
 };

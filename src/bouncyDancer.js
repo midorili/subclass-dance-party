@@ -6,7 +6,7 @@ var makeBouncyDancer = function(top, left, timeBetweenSteps) {
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
-  this.$node = $('<img src ="dancer2.jpg" class="dancer bouncydancer" alt="dancer2">');
+  this.$node = $('<img src ="dancer1.jpg" class="dancer bouncydancer" alt="dancer2">');
   this.up = true;
   this.step();
   this.setPosition(top, left);
