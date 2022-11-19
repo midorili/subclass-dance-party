@@ -2,8 +2,10 @@ body, html{
   height:100%;
 }
 body{
+  background: url('disco.jpg') no-repeat center;
   margin: 0px;
-  background-color:#444;
+  /* background-color:#444; */
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
