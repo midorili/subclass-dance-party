@@ -56,3 +56,7 @@ text-align: center;
   float:right;
   font-family: Secular One;
 }
+
+.column2 {
+  float: left;
+}

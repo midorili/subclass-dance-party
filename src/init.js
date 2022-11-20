@@ -1,6 +1,5 @@
 $(document).ready(function() {
   window.dancers = [];
-  // Create an array of --center-- positions for dancers
   window.centerPositions = [
     ['50%', '35%'], ['50%', '55%'], ['50%', '45%'], ['50%', '25%'], ['50%', '65%'],
     ['60%', '30%'], ['60%', '40%'], ['60%', '50%'], ['60%', '60%'], ['60%', '70%'],
