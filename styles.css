@@ -50,3 +50,9 @@ text-align: center;
   font-size: 18px;
   float: center;
 }
+
+.actionButton {
+  padding:5px 12px;
+  float:right;
+  font-family: Secular One;
+}
