@@ -38,8 +38,6 @@ makeBouncyDancer.prototype.step = function() {
     // need to set up value back to true
   }
   // }
-
-
   // if statement to find out if it is up or down
 
 };
